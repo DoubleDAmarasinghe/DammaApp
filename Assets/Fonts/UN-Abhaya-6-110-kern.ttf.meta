@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6fcde576e51ee6c4bbe192d27c3d8112
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - UN-Abhaya
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b1c14666e57b94545b62d53ed5f49565, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

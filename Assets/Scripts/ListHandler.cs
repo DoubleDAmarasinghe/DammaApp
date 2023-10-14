@@ -6,16 +6,13 @@ using UnityEngine.UI;
 public class ListHandler : MonoBehaviour
 {
     [System.Serializable]
-    struct RefImages 
+    public struct LocalizationKeys 
     { 
-        public List<Sprite> refImages; 
+        public List<string> localizationIndex; 
     }
 
-    [SerializeField] RefImages[] refImageContainer;
+    public LocalizationKeys[] localizationKeyContainer;
 
-    [SerializeField] private GameObject previousPanel;
-    [SerializeField] private Button[] sectionButtons;
-    [SerializeField] private Image[] sectionImages;
 
     
     // Start is called before the first frame update

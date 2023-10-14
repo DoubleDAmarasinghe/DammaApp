@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Assets.SimpleLocalization;
 
 public class HierarchyManager : MonoBehaviour
 {
@@ -104,23 +106,14 @@ public class HierarchyManager : MonoBehaviour
                                     case "3":
                                         //final
                                         break;
-                                    case "4":
-                                        //final
-                                        break;
-                                    case "5":
-                                        //final
-                                        break;
-                                    case "6":
-                                        //final
-                                        break;
-                                    case "7":
-                                        //final
-                                        break;
-                                    case "8":
-                                        //final
-                                        break;
                                     default:
-                                        AcrivateNumberOfButtons(8, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[0].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[0].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(3, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
@@ -135,7 +128,13 @@ public class HierarchyManager : MonoBehaviour
                                         //final
                                         break;
                                     default:
-                                        AcrivateNumberOfButtons(2, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[1].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[1].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(3, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
@@ -150,12 +149,24 @@ public class HierarchyManager : MonoBehaviour
                                         //final
                                         break;
                                     default:
-                                        AcrivateNumberOfButtons(2, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[2].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[2].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(3, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
 
                             default:
+                                for (int i = 0; i < set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[0].localizationIndex.Count; i++)
+                                {
+                                    string key = set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[0].localizationIndex[i];
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                }
                                 AcrivateNumberOfButtons(3, set_3_Buttons, set_2_Panel, set_3_Panel);
                                 break;
                         }
@@ -183,14 +194,14 @@ public class HierarchyManager : MonoBehaviour
                                     case "5":
                                         //final
                                         break;
-                                    case "6":
-                                        //final
-                                        break;
-                                    case "7":
-                                        //final
-                                        break;
                                     default:
-                                        AcrivateNumberOfButtons(7, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[3].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[3].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(5, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
@@ -213,17 +224,14 @@ public class HierarchyManager : MonoBehaviour
                                     case "5":
                                         //final
                                         break;
-                                    case "6":
-                                        //final
-                                        break;
-                                    case "7":
-                                        //final
-                                        break;
-                                    case "8":
-                                        //final
-                                        break;
                                     default:
-                                        AcrivateNumberOfButtons(8, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[4].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[4].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(5, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
@@ -240,13 +248,31 @@ public class HierarchyManager : MonoBehaviour
                                     case "3":
                                         //final
                                         break;
+                                    case "4":
+                                        //final
+                                        break;
+                                    case "5":
+                                        //final
+                                        break;
                                     default:
-                                        AcrivateNumberOfButtons(3, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[5].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[5].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(5, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
 
                             default:
+                                for (int i = 0; i < set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[1].localizationIndex.Count; i++)
+                                {
+                                    string key = set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[1].localizationIndex[i];
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                }
                                 AcrivateNumberOfButtons(3, set_3_Buttons, set_2_Panel, set_3_Panel);
                                 break;
                         }
@@ -270,20 +296,14 @@ public class HierarchyManager : MonoBehaviour
                                     case "4":
                                         //final
                                         break;
-                                    case "5":
-                                        //final
-                                        break;
-                                    case "6":
-                                        //final
-                                        break;
-                                    case "7":
-                                        //final
-                                        break;
-                                    case "8":
-                                        //final
-                                        break;
                                     default:
-                                        AcrivateNumberOfButtons(8, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[6].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[6].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(4, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
@@ -303,20 +323,14 @@ public class HierarchyManager : MonoBehaviour
                                     case "4":
                                         //final
                                         break;
-                                    case "5":
-                                        //final
-                                        break;
-                                    case "6":
-                                        //final
-                                        break;
-                                    case "7":
-                                        //final
-                                        break;
-                                    case "8":
-                                        //final
-                                        break;
                                     default:
-                                        AcrivateNumberOfButtons(8, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[7].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[7].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(4, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
@@ -336,25 +350,25 @@ public class HierarchyManager : MonoBehaviour
                                     case "4":
                                         //final
                                         break;
-                                    case "5":
-                                        //final
-                                        break;
-                                    case "6":
-                                        //final
-                                        break;
-                                    case "7":
-                                        //final
-                                        break;
-                                    case "8":
-                                        //final
-                                        break;
                                     default:
-                                        AcrivateNumberOfButtons(8, set_4_Buttons, set_3_Panel, set_4_Panel);
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[8].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[8].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
+                                        AcrivateNumberOfButtons(4, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
 
                             default:
+                                for (int i = 0; i < set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[2].localizationIndex.Count; i++)
+                                {
+                                    string key = set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[2].localizationIndex[i];
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                }
                                 AcrivateNumberOfButtons(3, set_3_Buttons, set_2_Panel, set_3_Panel);
                                 break;
                         }
@@ -409,6 +423,12 @@ public class HierarchyManager : MonoBehaviour
                                         }
                                         break;
                                     default:
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[9].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[9].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
                                         AcrivateNumberOfButtons(2, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
@@ -554,19 +574,40 @@ public class HierarchyManager : MonoBehaviour
                                         }
                                         break;
                                     default:
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[10].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[10].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
                                         AcrivateNumberOfButtons(2, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
 
                             default:
+                                for (int i = 0; i < set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[3].localizationIndex.Count; i++)
+                                {
+                                    string key = set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[3].localizationIndex[i];
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                }
                                 AcrivateNumberOfButtons(2, set_3_Buttons, set_2_Panel, set_3_Panel);
                                 break;
                         }
                         break;
 
                     default:
+                        for(int i=0; i< set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[0].localizationIndex.Count; i++)
+                        {
+                            string key = set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[0].localizationIndex[i];
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                        }
+                        
+                        
                         AcrivateNumberOfButtons(4, set_2_Buttons, set_1_Panel, set_2_Panel);
+                        
                         break;
                 }
                 break;
@@ -603,6 +644,12 @@ public class HierarchyManager : MonoBehaviour
                                         //final
                                         break;
                                     default:
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[11].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[11].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
                                         AcrivateNumberOfButtons(7, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
@@ -630,12 +677,24 @@ public class HierarchyManager : MonoBehaviour
                                         //final
                                         break;
                                     default:
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[12].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[12].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
                                         AcrivateNumberOfButtons(6, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
 
                             default:
+                                for (int i = 0; i < set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[4].localizationIndex.Count; i++)
+                                {
+                                    string key = set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[4].localizationIndex[i];
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                }
                                 AcrivateNumberOfButtons(2, set_3_Buttons, set_2_Panel, set_3_Panel);
                                 break;
                         }
@@ -690,12 +749,24 @@ public class HierarchyManager : MonoBehaviour
                                         //final
                                         break;
                                     default:
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[13].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[13].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
                                         AcrivateNumberOfButtons(14, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
 
                             default:
+                                for (int i = 0; i < set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[5].localizationIndex.Count; i++)
+                                {
+                                    string key = set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[5].localizationIndex[i];
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                }
                                 AcrivateNumberOfButtons(1, set_3_Buttons, set_2_Panel, set_3_Panel);
                                 break;
                         }
@@ -742,6 +813,12 @@ public class HierarchyManager : MonoBehaviour
                                         //final
                                         break;
                                     default:
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[14].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[14].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
                                         AcrivateNumberOfButtons(3, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
@@ -808,18 +885,36 @@ public class HierarchyManager : MonoBehaviour
                                         //final
                                         break;
                                     default:
+                                        for (int i = 0; i < set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[15].localizationIndex.Count; i++)
+                                        {
+                                            string key = set_4_Panel.GetComponent<ListHandler>().localizationKeyContainer[15].localizationIndex[i];
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                            set_4_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                        }
                                         AcrivateNumberOfButtons(19, set_4_Buttons, set_3_Panel, set_4_Panel);
                                         break;
                                 }
                                 break;
 
                             default:
+                                for (int i = 0; i < set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[6].localizationIndex.Count; i++)
+                                {
+                                    string key = set_3_Panel.GetComponent<ListHandler>().localizationKeyContainer[6].localizationIndex[i];
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                                    set_3_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                                }
                                 AcrivateNumberOfButtons(2, set_3_Buttons, set_2_Panel, set_3_Panel);
                                 break;
                         }
                         break;
 
                     default:
+                        for (int i = 0; i < set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[1].localizationIndex.Count; i++)
+                        {
+                            string key = set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[1].localizationIndex[i];
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                        }
                         AcrivateNumberOfButtons(3, set_2_Buttons, set_1_Panel, set_2_Panel);
                         break;
                 }
@@ -1035,6 +1130,12 @@ public class HierarchyManager : MonoBehaviour
                         break;
 
                     default:
+                        for (int i = 0; i < set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[2].localizationIndex.Count; i++)
+                        {
+                            string key = set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[2].localizationIndex[i];
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                        }
                         AcrivateNumberOfButtons(2, set_2_Buttons, set_1_Panel, set_2_Panel);
                         break;
                 }
@@ -1052,6 +1153,12 @@ public class HierarchyManager : MonoBehaviour
                         break;
 
                     default:
+                        for (int i = 0; i < set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[3].localizationIndex.Count; i++)
+                        {
+                            string key = set_2_Panel.GetComponent<ListHandler>().localizationKeyContainer[3].localizationIndex[i];
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = LocalizationManager.Localize(key);
+                            set_2_Buttons[i].transform.GetChild(0).gameObject.GetComponent<TMP_Text>().GetComponent<LocalizedText>().LocalizationKey = key;
+                        }
                         AcrivateNumberOfButtons(1, set_2_Buttons, set_1_Panel, set_2_Panel);
                         break;
                 }
